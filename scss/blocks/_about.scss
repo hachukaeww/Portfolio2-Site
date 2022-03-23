@@ -1,0 +1,51 @@
+.about{
+    margin: 8.4rem 0;
+}
+.about__inner{
+    display: flex;
+    max-width: 1090px;
+}
+.about__photo,
+.about__content{
+    width: 50%;
+}
+.about__photo{
+    position: relative;
+    img{
+        position: relative;
+        z-index: 2;
+    }
+    &::before{
+        content: "";
+        display: block;
+        width: 413px;
+        height: 413px;
+        background-color: #EFEFEF;
+        position: absolute;
+        left: 1rem;
+        bottom: 0; 
+        z-index: 1;
+    }
+}
+.about__content{
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+}
+.about__bigtitle{
+    font-size: 6.1rem;
+    color: #DEDEDE;
+    font-weight:700;
+    text-transform: uppercase;
+}
+.about__title{
+    font-size:3rem;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+}
+.about__text{
+    font-size: .8rem;
+    font-weight:400;
+    color: #6A696B;
+    margin-bottom: 2.8rem;
+}
